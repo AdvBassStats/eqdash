@@ -6,7 +6,34 @@
     <script type="text/javascript"
 	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script type="text/javascript"></script>
-
+	
+    <style type="text/css">
+        body {
+            background-color:rgb(201, 199, 199);
+            margin: 0;
+            padding: 0;
+        }
+        #vizContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+        #footer img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body style="background-color:rgb(201, 199, 199);">
@@ -17,8 +44,10 @@
 
     <script src="./app.js"></script>
 
-    <p>Data &amp; images from Bassmaster.com --- Charts by AdvBassStats</p>
-
+    <div id="footer">
+        <img src="https://raw.githubusercontent.com/AdvBassStats/eqdash/main/ADVBassStats-Logo-bass-trans-50pct.png" alt="AdvBassStats Logo" width="50" height="50">
+        <p>Data &amp; images from Bassmaster.com --- Charts by AdvBassStats</p>
+    </div>
 </body>
 
 </html>
