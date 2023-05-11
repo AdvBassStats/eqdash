@@ -13,23 +13,26 @@
             margin: 0;
             padding: 0;
         }
+	#container {
+            position: relative;
+            height: 100vh;
+        }
         #vizContainer {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-	#footer {
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	    width: 100%;
-	    position: absolute;
-	    bottom: 0;
-	    height: 50px;
-	    color: #fff;
-	    font-size: 14px;
-	    text-align: center;
-	}
+       #footer {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+         height: 50px;
+         color: #fff;
+         font-size: 14px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
         #footer img {
             height: 50px;
             width: 50px;
@@ -39,7 +42,7 @@
 </head>
 
 <body style="background-color:rgb(201, 199, 199);">
-
+  <div id="container">
   <h1>AdvBassStats - 2023 Bassmaster Opens EQ AOY Dashboard</h1>
 
     <div id="vizContainer" style="display: flex;align-items: center;justify-content: center;"></div>
@@ -50,6 +53,7 @@
         <img src="https://raw.githubusercontent.com/AdvBassStats/eqdash/main/ADVBassStats-Logo-bass-trans-50pct.png" alt="AdvBassStats Logo" width="50" height="50">
         <p>Data &amp; images from Bassmaster.com --- Charts by AdvBassStats</p>
     </div>
+  </div>  
 </body>
 
 </html>
